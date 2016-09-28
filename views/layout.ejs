@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="/javascripts/html5.js" type='text/javascript'></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="logo ">
+
+    </div>
+   
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="<% if( navNum == 1){ %>active<% } %>"><a href="/">首页</a></li>
+            <li class="dropdown <% if( navNum == 2){ %>active<% } %>">
+                <a href="###" class="dropdown-toggle" data-toggle="dropdown">中心概况<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/center_teacher">师资队伍</a></li>
+                    <li><a href="/institutional_settings">机构设置</a></li>
+                    <li><a href="/introduction">中心简介</a></li>
+                </ul>
+            </li>
+            <li class="<% if( navNum == 3){ %>active<% } %>"><a href="/news">最新动态</a></li>
+            <li class="dropdown <% if( navNum == 4){ %>active<% } %>">
+                <a href="###" class="dropdown-toggle" data-toggle="dropdown">规章制度<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/school_system">学校制度</a></li>
+                    <li><a href="/laboratory_sys">中心制度</a></li>
+                </ul>
+            </li>
+            <li class="dropdown <% if( navNum == 5){ %>active<% } %>">
+                <a href="###" class="dropdown-toggle" data-toggle="dropdown">实验教学<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/teach_ideas">教学理念</a></li>
+                    <li><a href="/course_overview">课程概况</a></li>
+                    <li><a href="/teach_source">教学资源</a></li>
+                    <li><a href="/laboratory_list">实验室列表</a></li>
+                </ul>
+            </li>
+            <li class="<% if( navNum == 6){ %>active<% } %>"><a href="/equipment">设备环境</a></li>
+            <li class="dropdown <% if( navNum == 7){ %>active<% } %>"><a href="/download_center">下载中心</a></li>
+            <%if( username && identity == "教师"){%>
+            <li class="<% if( navNum == 10){ %>active<% } %>"><a href="/teacher">教师任务</a></li>
+            <%}%>
+            <%if( username && identity == "学生"){%>
+            <li class="<% if( navNum == 10){ %>active<% } %>"><a href="/student">学生任务</a></li>
+            <%}%>
+            <% if( !username){%>
+            <li class="<% if( navNum == 8){ %>active<% } %>"><a href="/login">登录</a></li>
+            <li class="<% if( navNum == 9){ %>active<% } %>"><a href="/reg">注册</a></li>
+            <%}%>
+        </ul>
+        <% if( username ){%>
+        <div class="logined fr">
+            <a href="/logout" class="login-out">退出</a>欢迎您：<strong id="userName"><%= username%></strong></div>
+        </div>
+        <%}%>
+
+
+    </nav>
+
+    <div id="container" class="container-fluid">
+
+        <% if ( navNum == 2 && navFirst == 1) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/introduction">中心概况</a></li>
+            <li class="active">师资队伍：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 2 && navFirst == 2) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/introduction">中心概况</a></li>
+            <li class="active">机构设置：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 2 && navFirst == 3) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/introduction">中心概况</a></li>
+            <li class="active">中心简介：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 4 && navFirst == 1) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/school_system">规章制度</a></li>
+            <li class="active">学校制度：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 4 && navFirst == 2) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/school_system">规章制度</a></li>
+            <li class="active">中心制度：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 5 && navFirst == 1) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/teach_ideas">实验教学</a></li>
+            <li class="active">教学理念：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 5 && navFirst == 2) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/teach_ideas">实验教学</a></li>
+            <li class="active">课程概况：</li>
+        </ol>
+        <% } %>
+        <% if ( navNum == 5 && navFirst == 3) { %>
+        <ol class="breadcrumb">
+            <li><a href="/">首页</a></li>
+            <li><a href="/teach_ideas">实验教学</a></li>
+            <li class="active">教学资源：</li>
+        </ol>
+        <% } %>
+
+        <%- body %>
+    </div>
+    <footer>
+        <div class="footer-con">
+            <div class="about-link">
+                <a href="">友情链接</a>&nbsp;&nbsp;
+                <a href="">网址大全</a>&nbsp;&nbsp;
+                <a href="">邮电大学主页</a>&nbsp;&nbsp;
+                <a href="">网址大全</a>&nbsp;&nbsp;
+                <a href="">网址大全</a>&nbsp;&nbsp;
+                <a href="">网址大全</a>
+            </div>
+            <div class="copy">&copy; 重庆邮电大学</div>
+        </div>
+
+    </footer>
+</body>
+<script src="/javascripts/jquery-1.11.3.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+<script src="/javascripts/jquery.json-2.4.min.js"></script>
+<script src="/javascripts/main.js"></script>
+</html>

@@ -1,0 +1,27 @@
+<div class="panel panel-default panel-width">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><%= stuName%> 同学的 <%= courseTitle%>课程的作业</div>
+    <div class="panel-body">
+        <% con.forEach(function(data){ %>
+        <h3>
+            <span>作业标题：</span>
+            <span><%= data.title %></span>
+        </h3>
+        <p>
+           <span>作业中遇到的问题：</span>
+            <%= data.question%>
+        </p>
+        <p>
+            <span>作业的答案：</span>
+            <%= data.answer%>
+        </p>
+        <% if (data.file_name != ''){
+            var path = data.file_path ;
+            var pathArray = path.split('\\');
+            var realPath = '/'+pathArray[1]+'/'+pathArray[2];
+        %>
+        <a href="<%= realPath%>" download="<%= data.file_path %>"> <%= data.file_name%></a>
+        <%}%>
+        <% }) %>
+    </div>
+</div>

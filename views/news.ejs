@@ -1,0 +1,16 @@
+<div class="latest-news">
+    <h3>最新动态</h3>
+    <ul>
+        <% data.forEach(function(list){ %>
+        <li>
+            <span class="ribbon"><%= list.num %></span>
+
+            <h3 class="title"><%= list.title %></h3>
+
+            <p class="list-con"><%= list.con %></p>
+            <span class="time">2015-11-2</span>
+        </li>
+        <% }) %>
+
+    </ul>
+</div>

@@ -1,0 +1,844 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #E2F0F1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+a {
+    color: #00B7FF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.line{
+    display: block;
+    height:20px;
+    width:1px;
+    margin-left:5px;
+    margin-right:5px;
+    background-color: #ccc;
+    margin-top:-2px;
+}
+
+.more {
+    font-size: 12px;
+    color: #f19b14;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+legend{
+    border-bottom:0;
+}
+/*修改路径导航*/
+.breadcrumb {
+    width: 1024px;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+.form-login, .form-reg {
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.form-login .container, .form-reg .container {
+    width: 486px;
+}
+
+.form-reg .alert-warning, .form-login .alert-warning{
+    position: absolute;
+    top: -76px;
+    width: 350px
+}
+
+.input-group {
+    margin: 10px;
+}
+
+.input-group .btn-primary {
+    margin-top: 40px;
+}
+
+@media (min-width: 1200px) {
+    .row {
+        margin-left: -15px !important;
+    }
+}
+
+/*.logo{*/
+/*width:1024px;*/
+/*margin:0 auto;*/
+/*height:135px;*/
+/*background: url("../images/h1.jpg") no-repeat #ccc;*/
+/*}*/
+/*头部导航*/
+.navbar-default {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #257C9C;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover
+.navbar-default .navbar-nav a {
+    color: #f19b14;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.carousel-control {
+    padding-top: 96px;
+}
+
+/*外链链接样式*/
+footer {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.footer-con {
+    background-color: #257C9C;
+    text-align: center;
+    height: 100px;
+}
+
+.about-link {
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copy {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.about-link a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.about-link li {
+    padding: 4px 6px;
+}
+
+.about-link-title {
+    font-size: 18px;
+}
+
+.top-tips {
+    background-color: #fff;
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/*轮播的样式*/
+.carousel-inner .focus-img img {
+    width: 100%;
+    height: 235px;
+}
+
+/*主体的样式*/
+.content {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.content .panel {
+    margin-bottom: 0;
+}
+
+.content .news, .content .introduce {
+    float: left;
+    height: 277px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    background-color: #fff;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.introduce {
+    width: 500px;
+    margin-right: 20px;
+}
+
+.news {
+    width: 170px;
+    margin-right: 20px;
+}
+
+.news .hot {
+    width: 20px;
+    height: 20px;
+    background-color: #f19b14;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 4px;
+}
+
+.news .normal {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    display: block;
+    float: left;
+    text-align: center;
+    margin: 4px;
+}
+
+.news h3, .introduce h3, .video h3, .teach-source h3, .course-interduce h3, .course-list h3 {
+    height: 40px;
+    line-height: 40px;
+    background-color: #F8F8F8;
+    color: #15627F;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news ul, .teach-source ul, .course-interduce ul, .course-list ul {
+    padding-left: 0;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.video ul {
+    padding: 0;
+    margin: 0;
+}
+
+.news li {
+    width: 170px;
+}
+
+.news li, .video li, .teach-source li {
+    list-style: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news li a, .video li a, .teach-source li a, .course-interduce li a, .course-list li a {
+    color: #000;
+    font-size: 12px;
+}
+
+.course-interduce li, .course-list li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+}
+
+.video {
+    float: left;
+    width: 314px;
+    height: 277px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.video video {
+    height: 235px;
+    width: 312px;
+}
+
+.video li {
+    width: 314px;
+}
+
+.teach-source {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 170px;
+    height: 300px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.teach-source .point {
+    width: 6px;
+    height: 6px;
+    display: block;
+    float: left;
+    background: url(../images/point.png);
+    margin-top: 9px;
+    margin-right: 6px;
+}
+
+.teach-source li {
+    width: 170px;
+}
+
+.course-interduce {
+    margin-right: 20px;
+
+}
+
+.course-interduce, .course-list {
+    width: 407px;
+    height: 300px;
+    float: left;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.course-list .tips {
+    font-size: 12px;
+    color: #f19b14;
+}
+
+.check-icon {
+    height: 24px;
+    width: 24px;
+    display: block;
+    background: url("../images/check.png");
+    float: left;
+}
+
+.available {
+    height: 16px;
+    width: 16px;
+    display: block;
+    background: url("../images/available.png");
+    float: left;
+}
+
+.not-available {
+    height: 16px;
+    width: 16px;
+    display: block;
+    background: url("../images/not-available.png");
+    float: left;
+}
+
+/*师资队伍页面*/
+.center-teacher {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.center-teacher .one {
+    width: 230px;
+    height: 220px;
+    border-bottom: 2px solid #003580;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.center-teacher h3 span {
+    display: block;
+    padding-bottom: 5px;
+    border-left: 4px solid #0073b7;
+    padding-left: 10px;
+}
+
+.center-teacher .picture-pic {
+    width: 230px;
+    height: 124px;
+}
+
+.center-teacher p {
+    margin: 0;
+    padding: 5px;
+}
+
+/*机构设置页面*/
+.settings {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.settings h4 {
+    margin: 0;
+}
+
+.settings h3 span {
+    display: block;
+    padding-bottom: 5px;
+    border-left: 4px solid #0073b7;
+    padding-left: 10px;
+}
+
+/*中心简介*/
+.introduction {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.introduction h3 span {
+    display: block;
+    border-left: 4px solid #0073b7;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.introduction p {
+    line-height: 34px;
+    padding: 10px;
+}
+
+/*最新动态*/
+.latest-news {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.latest-news ul {
+    padding-left: 40px;
+}
+
+.latest-news .ribbon {
+    width: 24px;
+    height: 30px;
+    display: block;
+    background: url(../images/ribbon.png);
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.latest-news li {
+    list-style: none;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.latest-news .title {
+    font-size: 16px;
+    color: #f22a2a;
+    margin: 0;
+}
+
+.latest-news p {
+    text-indent: 2em;
+    margin-top: 10px;
+}
+
+.latest-news .time {
+    font-size: 14px;
+    color: #f19b14;
+    float: right;
+
+}
+
+/*学校制度*/
+.school-system {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.school-system .one {
+    margin-top: 10px;
+    line-height: 31px;
+    text-indent: 2em;
+    padding: 10px;
+}
+
+/*.school-system h3{*/
+/*margin:0;*/
+/*}*/
+.school-system h3 span {
+    display: block;
+    width: 120px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0073b7;
+}
+
+/*实验教学*/
+.teach-ideas {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.teach-ideas .con-list {
+    margin: -5px;
+
+}
+
+.teach-ideas h3 {
+    margin-top: 0;
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.teach-ideas h3 span {
+    display: block;
+    padding-bottom: 5px;
+    border-left: 4px solid #0073b7;
+    padding-left: 10px;
+    margin-left: 20px;
+    /*padding-top:20px;*/
+}
+
+.teach-ideas .con {
+    float: left;
+    margin: 5px;
+    width: 507px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+}
+
+.teach-ideas h4 {
+    width: 477px;
+}
+
+.teach-ideas h4 span {
+    padding: 10px;
+    background-color: #ccc;
+    border-bottom: 1px solid #0073B7;
+}
+
+.teach-ideas .con p {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*课程概况*/
+.course-overview {
+    background-color: #fff;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.course-overview h3 span {
+    display: block;
+    padding-bottom: 5px;
+    border-left: 4px solid #0073b7;
+    padding-left: 10px;
+}
+
+.course-overview .con-list {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    line-height: 2;
+    text-indent: 2em;
+    margin-top: 20px;
+}
+
+/*教学资源*/
+.teach-source-detail {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.teach-source-detail h4 {
+    margin-top: 0;
+    padding-left: 15px;
+
+}
+
+.teach-source-detail h3 {
+    font-size: 24px;
+    border-left: 4px solid #257C9C;
+    padding-left: 10px;
+}
+
+.teach-source-detail .con-left {
+    width: 240px;
+    /*border:1px solid #ccc;*/
+    margin-left: 10px;
+}
+
+.teach-source-detail .con-left .con-list {
+    padding-bottom: 23px;
+    border-bottom: 1px dashed #ccc;
+    color:#717171;
+}
+
+.teach-source-detail .con-left .source-pic {
+    width: 100px;
+    height: 120px;
+    float: left;
+}
+
+.teach-source-detail .con-left .source-title {
+    float: left;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.teach-source-detail .con-right {
+    width: 700px;
+    /*border:1px solid #ccc;*/
+    margin-right: 20px;
+}
+
+.teach-source-detail .con-right img {
+    width: 700px;
+    height: 230px;
+    margin-bottom:15px;
+}
+.list-con {
+    color:#525252;
+    margin-bottom:15px;
+}
+.teach-source-detail .con-title {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F3F3F3;
+    font-size: 15px;
+    border-left: 10px solid #E9E9E9;
+    margin-top: 20px;
+    color: #717171;
+}
+.teach-source-detail  .con-big-title{
+    height:35px;
+    line-height: 35px;
+    background-color: #F3F3F3;
+    border-left: 10px solid #E9E9E9;
+    margin-top: 20px;
+    color: #717171;
+}
+.list-title{
+    margin:0 0 10px 0;
+    color:#0DA4D3;
+    font-size:18px;
+}
+.teach-source-detail li {
+    margin-top: 30px;
+}
+
+/*实验室列表*/
+.laboratory-list {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.laboratory-list .panel-success {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 204px;
+    float: left;
+}
+
+.laboratory-list .panel-default {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 204px;
+    float: left;
+}
+
+.laboratory-list h3 {
+    font-size: 24px;
+    border-left: 4px solid #257C9C;
+    padding-left: 10px;
+}
+
+/*设备环境*/
+.equipment {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.equipment h3 {
+    border-left: 4px solid #257C9C;
+    padding-left: 10px;
+}
+
+.equipment .col-xs-6 {
+    position: relative;
+    width: 263.5px;
+}
+
+.equipment .des {
+    position: absolute;
+    padding-left: 10px;
+    bottom: 20px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    background-color: #f19b14;
+    width: 89%;
+}
+
+/*下载中心*/
+.download-center {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.download-center .panel {
+    margin-bottom: 0;
+}
+
+.download-center .con-list a {
+    width: 256px;
+    height: 208px;
+    text-align: center;
+    display: block;
+}
+.teach-source-detail .con-list{
+    border-bottom:1px dashed #ccc;
+}
+.download-center .con-list img {
+    margin-top: 15px;
+}
+
+.download-center .con-list a:hover {
+    background-color: #efefef;
+    text-decoration: none;
+}
+
+/*注册页面*/
+.dropdown-width {
+    width: 236px;
+}
+
+.form-reg .btn,.form-login .btn {
+    margin-right: 20px;
+}
+.form-reg .btn-default, .form-login .btn-default{
+    background-color: #EEE;
+}
+/*登录后用户的样式*/
+.logined{
+    color: #fff;
+    height:50px;
+    line-height: 50px;
+}
+.login-out{
+    margin-right:10px; 
+}
+/*学生任务*/
+.con-student{
+    width:1024px;
+    margin:20px auto;
+    background-color: #fff;
+    min-height:500px;
+}
+.con-student .course-detail{
+    width:472px;
+}
+.cou-teacher{
+    font-size: 12px;
+    margin-left:20px;
+    color:#257C9C;
+}
+.text-height{
+    min-height: 273px;
+}
+.student-name{
+    margin-left:10px;
+    font-size:12px;
+    color:#ccc;
+}
+.course-item{
+    width:300px;
+}
+.course-one{
+    padding:5px;
+    border-right:1px solid #ccc;
+}
+.stu-right{
+    width:784px;
+    margin-left:10px;
+}
+.con-student .nav{
+    width:230px;
+}
+.con-student .tab-content{
+    float: left;
+    width:784px;
+    margin-left:10px;
+}
+/*学生提交作业*/
+.submit-work{
+    height:500px;
+}
+.submit-work textarea{
+    height:100px;
+}
+.con-student .nav{
+    background-color: #EEE;
+}
+.con-student .panel-default{
+   min-height: 500px;
+}
+.show {
+    margin-left: 10px;
+    color: #F1A49E;
+    cursor: pointer;
+}
+.student-course{
+    width:300px;
+}
+.student-work{
+    width: 474px;
+    margin-left: 10px;
+}
+.well .panael-list{
+    border:2px solid #fff;
+    margin-bottom:10px;
+}
+.panel-width{
+    width:1024px;
+    margin:0 auto;
+}
+.con-student .check-content{
+    height:273px;
+}

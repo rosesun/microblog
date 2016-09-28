@@ -1,0 +1,35 @@
+<div class="download-center">
+    <div class="panel panel-success">
+        <div class="panel-heading">课件下载</div>
+        <ul class="con-box clearfix">
+            <% data.forEach(function(list){ %>
+            <li class="con-list fl">
+                <a href="###">
+                    <img src="<%= list.src %>" alt="下载的图标">
+
+                    <h3><%= list.title %></h3>
+
+                    <p><%= list.con %></p>
+                </a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">软件下载</div>
+        <ul class="con-box clearfix">
+            <% data.forEach(function(list){ %>
+            <li class="con-list fl">
+                <a href="###">
+                    <img src="<%= list.src %>" alt="下载的图标">
+
+                    <h3><%= list.title %></h3>
+
+                    <p><%= list.con %></p>
+                </a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,79 @@
+<div class="con-student clearfix">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills nav-stacked fl" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="checkCourse">学生选课</a>
+        </li>
+        <li role="presentation">
+            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" id="checked">已选课程</a>
+        </li>
+        <li role="presentation">
+            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" id="subWork">提交作业</a>
+        </li>
+        <li role="presentation">
+            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" id="seePingjia">查看评价</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <ul class="list-group">
+            加载中...
+            </ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+
+            <div class="fl student-course">
+                <ul class="list-group">
+                </ul>
+            </div>
+            <div class="fl student-work well">
+
+                <div class="panel-body panael-list">
+                    <div>作业标题：</div>
+                    <div>作业要求：</div>
+                </div>
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <form action="/upload" class="submit-work" enctype="multipart/form-data" method="post" id="submitWork">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">作业的标题</span>
+                    <input type="text" class="form-control" placeholder="作业的标题" aria-describedby="basic-addon1" name="title" id="work-title">
+                    <span class="input-group-addon" id="basic-addon1">课程名称</span>
+                    <input type="text" class="form-control" placeholder="课程名称" aria-describedby="basic-addon1" name="course_title" id="course-title">
+                    <span class="input-group-addon" id="basic-addon1">所属教师</span>
+                    <input type="text" class="form-control" placeholder="所属教师" aria-describedby="basic-addon1" name="course_teacher" id="course-teacher">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">作业中遇到的问题</span>
+                    <textarea type="text" class="form-control" placeholder="问题" aria-describedby="basic-addon1" name="question" id="student-question"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">作业的答案</span>
+                    <textarea type="text" class="form-control" placeholder="答案" aria-describedby="basic-addon1" name="answer" id="student-answer"></textarea>
+                </div>
+                <div class="input-group">
+                    <input type="file" name="upload" class="btn btn-default" id="student-file">
+                </div>
+                <div class="input-group">
+                    <button class="btn btn-primary" id="">提交作业</button>
+                </div>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">老师对作业的评价</h3>
+                </div>
+                <div class="panel-body">
+                    加载中...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

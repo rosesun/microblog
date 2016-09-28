@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/views/downloadCenter.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/equipment.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/laboratoryList.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/submitWork.ejs" charset="UTF-8" />
+  </component>
+</project>

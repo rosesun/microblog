@@ -1,0 +1,62 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">实验中心综合管理平台</a>
+
+            <div class="nav-collapse">
+                <ul class="nav navbar-pills">
+                    <li class="active"><a href="/">首页</a></li>
+                    <li class="dropdown">
+                        <a href="###" class="dropdown-toggle" data-toggle="dropdown">中心概况<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">师资队伍</a></li>
+                            <li><a href="">机构设置</a></li>
+                            <li><a href="">中心简介</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="/">最新动态</a></li>
+                    <li class="dropdown">
+                        <a href="###" class="dropdown-toggle" data-toggle="dropdown">规章制度<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">学校制度</a></li>
+                            <li><a href="">中心制度</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="###" class="dropdown-toggle" data-toggle="dropdown">实验教学<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">教学理念</a></li>
+                            <li><a href="">教学体系</a></li>
+                            <li><a href="">教学安排</a></li>
+                            <li><a href="">教学资源</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="/">设备环境</a></li>
+                    <li class="dropdown">
+                        <a href="###" class="dropdown-toggle" data-toggle="dropdown">下载中心<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="">课件下载</a></li>
+                            <li><a href="">软件下载</a></li>
+                        </ul>
+                    </li>
+                    <% if (!user) { %>
+                    <li><a href="/login">登录</a></li>
+                    <li><a href="/reg">注册</a></li>
+                    <% } else { %>
+                    <li><a href='javascript:;'>欢迎您,<%= user.name %></a></li>
+                    <li><a href="/logout">退出</a></li>
+                    <% } %>
+                </ul>
+                <form action="" class="navbar-form pull-right">
+                    <input type="text">
+                    <button type="submit" class="btn btn-info">搜索</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

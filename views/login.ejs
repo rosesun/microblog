@@ -1,0 +1,42 @@
+<div class="form-login">
+    <form class="jumbotron" method="post">
+        <fieldset class="container">
+            <legend>用户登录</legend>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">用户名</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1"
+                       name="username" id="username">
+                <% if ( error != "" ) { %>
+                <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                    <%= error %>
+                </div>
+                <% } %>
+                <div class="alert alert-warning alert-dismissible fade " role="alert" id="empty">
+                    用户名密码不能为空不能为空
+                </div>
+
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1">密码</span>
+                <input type="password" class="form-control" placeholder="passwoed" aria-describedby="sizing-addon1"
+                       name="password" id="password">
+            </div>
+            <div class="input-group input-group-lg">
+                <button type="button" class="btn btn-default btn-lg fl">请选择你的身份：</button>
+                <div class="dropdown fl">
+                    <input class="input-lg" id="dLabel" data-target="#" placeholder="学生" href="http://example.com"
+                           data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" name="identity"/>
+
+                    <ul class="dropdown-menu dropdown-large dropdown-width" aria-labelledby="dLabel" id="identity">
+                        <li><a href="###">学生</a></li>
+                        <li><a href="###">教师</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="input-group input-group-lg">
+                <button type="submit" class="btn btn-primary btn-lg" id="login-reg">登录</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+

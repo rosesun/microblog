@@ -1,0 +1,39 @@
+<div class="teach-source-detail clearfix">
+    <h3><span>教学资源</span></h3>
+
+    <div class="con-left fl">
+        <h4 class="con-title">推荐资源</h4>
+        <ul>
+            <% data.forEach(function(list){ %>
+            <li class="con-list clearfix">
+                <img class="source-pic" src="<%= list.src %>"/>
+
+                <div class="source-title">
+                    <p><%= list.title %></p>
+
+                    <p><strong>推荐：</strong><%= list.content %></p>
+                </div>
+            </li>
+            <% }) %>
+
+        </ul>
+    </div>
+    <div class="con-right fr">
+        <h4 class=" con-big-title">热门资源</h4>
+        <ul>
+            <% data.forEach(function(list){ %>
+            <li class="con-list clearfix">
+                <h2 class="list-title"><%= list.title %></h2>
+                <img class="source-pic" src="<%= list.src %>"/>
+
+                <div class="source-title">
+                    <p><%= list.title %></p>
+
+                    <p class="list-con"><strong>推荐：</strong><%= list.content %></p>
+                </div>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</div>
+

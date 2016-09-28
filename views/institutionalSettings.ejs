@@ -1,0 +1,14 @@
+<div class="settings">
+    <h3>
+        <span>机构的相关设置：</span>
+    </h3>
+
+    <% con.forEach(function(data){ %>
+    <div class="list panel panel-default">
+        <h4 class="panel-heading"><%= data.title %></h4>
+
+        <p class="panel-body"><%= data.des %></p>
+    </div>
+    <% }) %>
+
+</div>

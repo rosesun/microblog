@@ -1,0 +1,24 @@
+<div class="laboratory-list">
+    <h3>
+        <span>实验室列表：</span>
+    </h3>
+    <% data.available.forEach(function(list){ %>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            可用教室
+        </div>
+        <div class="panel-body">
+            <%= list %>
+        </div>
+    </div>
+    <% }) %>
+    <% data.disavailable.forEach(function(list){ %>
+    <div class="panel panel-default">
+        <div class="panel-heading">不可用教室</div>
+        <div class="panel-body">
+            <%= list %>
+        </div>
+    </div>
+    <% }) %>
+
+</div>

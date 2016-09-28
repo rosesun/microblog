@@ -1,0 +1,16 @@
+<div class="equipment">
+    <h3><span>设备环境</span></h3>
+
+    <div class="row">
+        <% data.forEach(function(list){ %>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="<%= list.src %>" alt="设备图片">
+            </a>
+
+            <p class="des"><%= list.des %></p>
+        </div>
+        <% }) %>
+    </div>
+
+</div>

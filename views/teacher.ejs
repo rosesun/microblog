@@ -1,0 +1,90 @@
+<div class="con-student clearfix">
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills nav-stacked fl" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#home-teacher" aria-controls="home-teacher" role="tab" data-toggle="tab" id="checkCourse-teacher">课程列表</a>
+        </li>
+        <li role="presentation">
+            <a href="#profile-teacher" aria-controls="profile-teacher" role="tab" data-toggle="tab" id="checked-teacher">发布作业</a>
+        </li>
+        <li role="presentation">
+            <a href="#messages-teacher" aria-controls="messages-teacher" role="tab" data-toggle="tab" id="subWork-teacher">查收作业</a>
+        </li>
+        <li role="presentation-teacher">
+            <a href="#settings-teacher" aria-controls="settings-teacher" role="tab" data-toggle="tab" id="seePingjia-teacher">提交评价</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home-teacher">
+            <ul class="list-group course-item fl">
+            正在加载...
+            </ul>
+			<div class="course-detail fr">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						此处将显示选课的学生姓名
+					</div>
+				</div>
+			</div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile-teacher">
+        	<form action="/upload_teacher" class="submit-work" enctype="multipart/form-data" method="post" id="work-teacher">
+
+        		<div class="input-group">
+        			<span class="input-group-addon" id="basic-addon1">作业标题</span>
+        			<input type="text" class="form-control" placeholder="作业标题" aria-describedby="basic-addon1" name="work_title" id="work_title">
+        		</div>
+
+        		<div class="input-group">
+        		<span class="input-group-addon" id="basic-addon1">所属课程名称</span>
+        			<input type="text" class="form-control" placeholder="所属课程名称" aria-describedby="basic-addon1" name="course_title" id="course_title">
+        		</div>
+
+        		<div class="input-group">
+        			<span class="input-group-addon" id="basic-addon1">作业要求</span>
+        			<textarea type="text" class="form-control text-height" placeholder="作业要求" aria-describedby="basic-addon1" name="demand" id="demand"></textarea>
+        		</div>
+        		<div class="input-group">
+        			<input type="file" name="upload" class="btn btn-default"></input>
+        		</div>
+        		<div class="input-group">
+        			<button class="btn btn-primary" id="submit-work">发布作业</button>
+        		</div>
+        	</form>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages-teacher">
+            <ul class="list-group">
+               正在加载...
+            </ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings-teacher">
+            <form action="/teacher/evaluation" class="submit-work" method="post" id="evaluation">
+
+        		<div class="input-group">
+        			<span class="input-group-addon" id="basic-addon1">作业标题</span>
+        			<input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" name="checkTitle" id="evaluation-title">
+        		</div>
+
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">课程名称</span>
+					<input type="text" class="form-control" placeholder="课程名称" aria-describedby="basic-addon1" name="checkCourse" id="evaluation-course">
+				</div>
+
+        		<div class="input-group">
+        		<span class="input-group-addon" id="basic-addon1">学生姓名</span>
+        			<input type="text" class="form-control" placeholder="学生姓名" aria-describedby="basic-addon1" name="checkName" id="evaluation-name">
+        		</div>
+
+        		<div class="input-group">
+        			<span class="input-group-addon" id="basic-addon1">评价的内容</span>
+        			<textarea type="text" class="form-control check-content" placeholder="评价的内容" aria-describedby="basic-addon1" name="checkContent" id="evaluation-content"></textarea>
+        		</div>
+        		<div class="input-group">
+        			<button class="btn btn-primary">提交评价</button>
+        		</div>
+        	</form>
+        </div>
+    </div>
+</div>

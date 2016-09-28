@@ -1,0 +1,104 @@
+<div class="content">
+    <div class="news panel panel-default">
+        <h3>最新动态 <a href="/news" class="more">more&gt;&gt;</a></h3>
+        <ul>
+            <% news.forEach(function(list){ %>
+            <li>
+                <span
+                        <% if (list.num <= 3){ %>
+                        class="hot"
+                        <% } else { %>
+                        class="normal"
+                        <% } %>
+                        ><%= list.num %></span>
+                <a href=""><%= list.list %></a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="introduce panel panel-default">
+        <h3>中心概况 <a href="/introduction" class="more">more&gt;&gt;</a></h3>
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active focus-img">
+                    <img src="/images/focus1.jpg" alt="First slide">
+                </div>
+                <div class="item focus-img">
+                    <img src="/images/focus2.jpg" alt="Second slide">
+                </div>
+                <div class="item focus-img">
+                    <img src="/images/focus3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;</a>
+        </div>
+    </div>
+    <div class="video panel panel-default">
+        <h3>教学视频 <a href="/download_center" class="more">more&gt;&gt;</a></h3>
+        <ul>
+            <video src="../img/movie.ogg" controls="controls">
+                你的浏览器暂时不支持该视频播放，请选用谷歌等高级浏览器
+            </video>
+        </ul>
+    </div>
+    <div class="teach-source panel panel-default">
+        <h3>教学资源 <a href="teach_source" class="more">more&gt;&gt;</a></h3>
+        <ul>
+            <% source.forEach(function(list){ %>
+            <li>
+                <a href="<%= list.url %>" download="<%= list.list %>">
+                    <span class="point"></span>
+                    <%= list.list %>
+                </a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="course-interduce panel panel-default">
+        <h3>课程概况 <a href="/course_overview" class="more">more&gt;&gt;</a></h3>
+        <ul>
+            <% course.forEach(function(list){ %>
+            <li><a href=""><span class="check-icon"></span><%= list.list %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="course-list panel panel-default">
+        <h3>实验室列表 <a href="/laboratory_list" class="more">more&gt;&gt;</a></h3>
+        <ul>
+            <% laboratory.forEach(function(list){ %>
+            <li>
+                <a href="">
+                    <span
+                            <% if (list.status == 1){ %>
+                            class="available"
+                            <% } else { %>
+                            class="not-available"
+                            <% } %>
+                            ></span>
+                    <%= list.list %>
+                </a>
+                <span class="tips">
+                    <% if (list.status == 1){ %>
+                    教室可用
+                    <% } else { %>
+                    教室已经被占用
+                    <% } %>
+                </span>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</div>
+

@@ -1,0 +1,20 @@
+<div class="teach-ideas">
+    <h3>
+        <span>教学理念：</span>
+    </h3>
+
+    <div class="con-list">
+        <% data.forEach(function(list){ %>
+        <div class="con">
+            <h4><span> <%= list.title %></span></h4>
+
+            <p>
+                <%= list.ideas %>
+            </p>
+
+        </div>
+        <% }) %>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
